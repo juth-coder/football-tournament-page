@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Football Team Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        .container h2 {
+            text-align: center;
+        }
+        .container label {
+            display: block;
+            margin: 15px 0 5px;
+        }
+        .container input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .container button {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .container .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .container .reset-btn {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert("Team registration successful!");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Football Team Registration</h2>
+        <form onsubmit="handleSubmit(event)">
+            <label for="team-name">Team Name:</label>
+            <input type="text" id="team-name" name="team-name" required>
+
+            <label for="captain-name">Captain Name:</label>
+            <input type="text" id="captain-name" name="captain-name" required>
+
+            <label for="captain-phone">Captain Phone Number:</label>
+            <input type="tel" id="captain-phone" name="captain-phone" required>
+
+            <label for="player1-name">Player 1 Name:</label>
+            <input type="text" id="player1-name" name="player1-name" required>
+
+            <label for="player2-name">Player 2 Name:</label>
+            <input type="text" id="player2-name" name="player2-name" required>
+
+            <label for="player3-name">Player 3 Name:</label>
+            <input type="text" id="player3-name" name="player3-name" required>
+
+            <label for="player4-name">Player 4 Name:</label>
+            <input type="text" id="player4-name" name="player4-name" required>
+
+            <label for="player5-name">Player 5 Name:</label>
+            <input type="text" id="player5-name" name="player5-name" required>
+
+            <label for="player6-name">Player 6 Name:</label>
+            <input type="text" id="player6-name" name="player6-name" required>
+
+            <label for="player7-name">Player 7 Name:</label>
+            <input type="text" id="player7-name" name="player7-name" required>
+
+            <label for="player8-name">Player 8 Name:</label>
+            <input type="text" id="player8-name" name="player8-name" required>
+
+            <label for="team-email">Team's Official Email:</label>
+            <input type="email" id="team-email" name="team-email" required>
+
+            <label for="transaction-id">Transaction ID (after payment):</label>
+            <input type="text" id="transaction-id" name="transaction-id" required>
+
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="reset" class="reset-btn">Reset</button>
+        </form>
+    </div>
+</body>
+</html>
